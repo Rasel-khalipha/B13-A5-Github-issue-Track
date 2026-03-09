@@ -12,7 +12,7 @@ signInBtn.addEventListener("click", () => {
 		alert("Login successful!");
 		userName.value = "";
 		password.value = "";
-		window.location.assign("/dashboard.html");
+		window.location.assign("dashboard.html");
 	} else {
 		alert("Invalid user name or password.");
 	}
