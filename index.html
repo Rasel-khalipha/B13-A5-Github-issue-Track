@@ -38,7 +38,82 @@
 			referrerpolicy="no-referrer"
 		/>
 </head>
-<body>
-    
-</body>
+<body class="min-h-screen grid grid-cols-1 grid-rows-1 place-items-center">
+		<div
+			class="bg-white box-shadow w-full md:w-[520px] rounded-lg p-5 md:p-8 my-10"
+		>
+			<div class="logo place-items-center mx-auto">
+				<img src="./assets/github-logo.png" alt="github-logo" class="mb-6" />
+				<h2 class="font-semibold text-2xl text-[#1F2937]">
+					GitHub Issues Tracker
+				</h2>
+				<p class="font-normal text-base text-[#64748B]">
+					Sign in to manage your issues
+				</p>
+			</div>
+			<div class="form">
+				<div class="card w-full shrink-0 mx-auto rounded-lg">
+					<div class="card-body">
+						<fieldset class="fieldset">
+							<label class="label font-medium text-base text-[#1F2937] mb-2">
+								Username
+							</label>
+							<input
+								id="input-username"
+								type="Text"
+								class="input rounded-lg w-full font-normal text-base text-[#64748B]"
+								placeholder="Enter Username"
+							/>
+							<span class="text-[#4A00FF] mt-[6px] font-normal text-sm"
+								>Default: admin</span
+							>
+							<br />
+							<label class="label font-medium text-base text-[#1F2937] mb-2">
+								Password
+							</label>
+							<input
+								id="input-password"
+								type="password"
+								class="input rounded-lg w-full font-normal text-base text-[#64748B]"
+								placeholder="Enter Password"
+								maxlength="8"
+							/>
+							<span class="text-[#4A00FF] mt-[6px] font-normal text-sm"
+								>Default: admin123</span
+							>
+							<button
+								id="sign-in-btn"
+								class="btn btn-primary mt-4 font-semibold text-base rounded-lg"
+							>
+								Sign In
+							</button>
+
+							<div class="divider mt-6 font-normal text-base text-[#1F2937]">
+								OR
+							</div>
+							<p class="font-normal text-sm text-[#64748B] mb-2 text-center">
+								Demo Credentials:
+							</p>
+							<div class="text-center bg-[#F8FAFC] rounded-lg p-6">
+								<h3 class="font-semibold text-base text-[#1F2937]">
+									Username:
+									<span class="font-normal text-base text-[#64748B]"
+										>admin</span
+									>
+								</h3>
+								<h3 class="font-semibold text-base text-[#1F2937]">
+									Password:
+									<span class="font-normal text-base text-[#64748B]"
+										>admin123</span
+									>
+								</h3>
+							</div>
+						</fieldset>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="./js/login.js"></script>
+	</body>
 </html>
