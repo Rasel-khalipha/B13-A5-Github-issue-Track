@@ -274,20 +274,9 @@ document.getElementById("btn-search").addEventListener("click", () => {
 	console.log(searchValue);
 	input.value = "";
 
-	loadingSpinner(true);
-	fetch("https://phi-lab-server.vercel.app/api/v1/lab/issues")
-		.then((res) => res.json())
-		.then((data) => {
-			const allIssues = data.data;
-
-			loadingSpinner(true);
-			const filterIssues = allIssues.filter((issue) =>
-				issue.title.toLowerCase().includes(searchValue),
-			);
-			document.getElementById("total-count").innerText = filterIssues.length;
-			loadCardIssues(filterIssues);
-			loadingSpinner(false);
-		});
-
-	loadingSpinner(false);
+	const filterIssues = allIssues.filter((issue) =>
+		issue.title.toLowerCase().includes(searchValue),
+	);
+	document.getElementById("total-count").innerText = filterIssues.length;
+	loadCardIssues(filterIssues);
 });

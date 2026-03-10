@@ -56,7 +56,6 @@
 				</div>
 				<div class="flex gap-2 relative">
 					<i
-						id="btn-search"
 						class="fa-solid fa-magnifying-glass absolute top-1 left-2 translate-y-1/2 z-10 text-[#64748B] cursor-pointer"
 					></i>
 					<input
@@ -65,15 +64,16 @@
 						placeholder="Search issues..."
 						class="input border border-[#E4E4E7] rounded pl-8"
 					/>
-					<div class="dropdown dropdown-end">
-						<div
+					<div class="">
+						<button
+							id="btn-search"
 							tabindex="0"
 							role="button"
 							class="btn bg-[#4A00FF] flex items-center w-[140px]"
 						>
 							<i class="fa-solid fa-plus text-white"></i>
 							<span class="text-white font-semibold text-base"> New Issue</span>
-						</div>
+						</button>
 					</div>
 				</div>
 			</div>
